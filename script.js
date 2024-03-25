@@ -1,11 +1,11 @@
-var canvas = document.getElementById("myCanvas");
+let canvas = document.getElementById("myCanvas");
 canvas.width = 800;
 canvas.height = 800;
-var ctx = canvas.getContext("2d");
+let ctx = canvas.getContext("2d");
 
 rule = "p ^ r"; // &, |, ^, ~ (alt+4 para el no)
 
-var getCascade = () => ({
+let getCascade = () => ({
     size:1, //1,2,4,5,8,10,20,40,80... divisores
     converter (p,q,r) {
         return eval(rule);
